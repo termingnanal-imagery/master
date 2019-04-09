@@ -1,5 +1,6 @@
 import h5py ,matplotlib ,shutil ,os ,cv2 ,matplotlib.pyplot as plt ,numpy as np, glob
 
+from sklearn.decomposition import PCA
 from scipy.fftpack import fft,ifft
 from PyQt5 import QtCore
 
@@ -9,23 +10,25 @@ def loadmat(file):
     #打开mat文件
     mat = h5py.File(file)
     origindata = mat['data'][:]
-    origindata = ((origindata - origindata.min()) / (origindata.max() - origindata.min()) * 255)
     num = int(origindata.shape[0]/4)
 
     data = np.ones((num,640,240))
     c=0
 
     while(c<int(origindata.shape[0]/4)):
-        data[c,:,:] = origindata[c*4,:,:]
+        data[c,:,:] = origindata[c*4+3,:,:]
         c = c+1
+    data = ((data - data.min()) / (data.max() - data.min()) * 255)
 
 
     print('数组大小'+ str(data.shape))
     print('compelet mat load')
 
-    # savepv('nonesub')
 
-    advance('PPT')
+
+    advance('PCA')
+
+    # savepv('SD')
 
 
 def loadvideo(filename):
@@ -60,7 +63,8 @@ def loadvideo(filename):
     print('数组大小'+ str(data.shape))
     print("complet videoload")
 
-    savepv('nonesub')
+
+    savepv('sub')
 
 
 def advance(function):
@@ -76,32 +80,57 @@ def PPT():
     global data
     # mat1 = np.transpose(data,(0,2,1))
     mat1 = data[:]
-    mat1 = mat1.reshape(data.shape[0],data.shape[1]*data.shape[2])
-    mat2 = np.ones(mat1.shape,dtype=complex)
-    i = 0
-    fdata = np.fft.fft(mat2)
-    print(fdata[:10,:10])
-    print(fdata.shape)
+    # mat1 = mat1.reshape(data.shape[0],data.shape[1]*data.shape[2])
+    mat2 = np.ones(mat1.shape)
+    N = mat1.shape[0]
+    for x in range(mat1.shape[1]):
+        for y in range(mat1.shape[2]):
+            ex = mat1[:,x,y]
+            sum = complex(0,0)
+            for i in range(N):
+                yi = complex(0,-2*np.pi*i*data.shape[1]*data.shape[2])
+                sum = ex[i]*np.exp(yi/N)+sum
+            sum = sum / N
+            mat2[:,x,y] = np.arctan(sum.imag/sum.real)
+    mat2 = ((mat2 - mat2.min()) / (mat2.max() - mat2.min()) * 255)
+    data = mat2[:]
+
 
 
 def TSR():
     global data
-    mat = h5py.File('../DATA/14.mat')
-    origindata = mat['data'][:]
-    tdata = origindata.reshape((origindata.shape[0],origindata.shape[1]*origindata.shape[2])).T
-    print(tdata.shape)
-
-
-
-
+    N = data.shape[0]
+    x = np.arange(0.08,0.08*(N+1),0.08)
+    for i in range(data.shape[1]):
+        for j in range(data.shape[2]):
+            ex = data[:,i,j]
+            z = np.polyfit(x,ex,8)
+            p = np.poly1d(z)
+            p = p.deriv().deriv()
+            data[:,i,j] = p(x)
 
 
 def PCA():
     global data
+    data = data.reshape(data.shape[0],data.shape[1]*data.shape[2])
+    data.transpose(1,0)
+    pca = PCA(n_components=8)
+    ex = pca.fit_transform(data)
+    print(ex.shape)
+
+    # ex = data.reshape(data.shape[0],data.shape[1]*data.shape[2])
+    # for x in range(data.shape[0]):
+    #     data[x,:] = data[x,:]-np.mean(data[x,:])
+    # F = 1/data.shape[0]*(ex.T.dot(ex))
+    # [a,b] = np.linalg.eig(F)
+    # b = b[:,:8]
+    # # data =
+    # # print(data.shape)
 
 
 def savepv(name):
     global data
+
     # 获取总帧数
     framnum = data.shape[0]
 

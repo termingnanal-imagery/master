@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a53fd4-1a04-4896-a045-ceedd3194f16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/youju.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ALG/loaddata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Thermal imaging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Thermal imaging.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/PyQt.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/PyQt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALG/loaddata.py" beforeDir="false" afterPath="$PROJECT_DIR$/ALG/loaddata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$像无损检测基本信号处理方法软件实现.doc" beforeDir="false" afterPath="$PROJECT_DIR$/~$像无损检测基本信号处理方法软件实现.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/热成像无损检测基本信号处理方法软件实现.doc" beforeDir="false" afterPath="$PROJECT_DIR$/热成像无损检测基本信号处理方法软件实现.doc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,15 +17,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Thermal_imaging$PyQt.coverage" NAME="PyQt Coverage Results" MODIFIED="1552284487552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
+    <SUITE FILE_PATH="coverage/Thermal_imaging$PyQt.coverage" NAME="PyQt Coverage Results" MODIFIED="1554775484188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/PyQt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            <state relative-caret-position="209">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -40,12 +36,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ALG/loaddata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+            <state relative-caret-position="351">
+              <caret line="118" column="19" lean-forward="true" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
               <folding>
-                <element signature="e#0#85#0" expanded="true" />
-                <element signature="e#459#1095#0" />
-                <element signature="e#1125#1226#0" />
+                <element signature="e#0#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,6 +60,7 @@
       <find>shape</find>
       <find>show</find>
       <find>load</find>
+      <find>F</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,14 +73,14 @@
         <option value="$PROJECT_DIR$/ALG/load.py" />
         <option value="$PROJECT_DIR$/ALG/__init__.py" />
         <option value="$PROJECT_DIR$/ALG/laji.py" />
-        <option value="$PROJECT_DIR$/GUI/PyQt.py" />
         <option value="$PROJECT_DIR$/ALG/loaddata.py" />
+        <option value="$PROJECT_DIR$/GUI/PyQt.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="541" />
-    <option name="y" value="136" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1072" />
     <option name="height" value="795" />
   </component>
@@ -97,18 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Thermal imaging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Thermal imaging" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,12 +189,22 @@
       <workItem from="1552134762159" duration="4947000" />
       <workItem from="1552189579994" duration="1381000" />
       <workItem from="1552227075016" duration="589000" />
-      <workItem from="1552270548886" duration="4194000" />
+      <workItem from="1552270548886" duration="4624000" />
+      <workItem from="1552479337901" duration="595000" />
+      <workItem from="1552481485502" duration="1244000" />
+      <workItem from="1552967022975" duration="3229000" />
+      <workItem from="1552983300917" duration="598000" />
+      <workItem from="1554162712651" duration="591000" />
+      <workItem from="1554306403732" duration="246000" />
+      <workItem from="1554377854011" duration="597000" />
+      <workItem from="1554640192794" duration="276000" />
+      <workItem from="1554708260690" duration="6527000" />
+      <workItem from="1554718482209" duration="11193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25324000" />
+    <option name="totallyTimeSpent" value="50850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -223,18 +218,18 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117803834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22245322" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910978" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4989605" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3970894" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952183" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.7006237" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.41580042" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -244,7 +239,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="3" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.42590618" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.015806112" />
@@ -291,10 +286,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ALG/laji.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/57359179/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="4232" column="8" selection-start-line="4232" selection-start-column="8" selection-end-line="4232" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/PyQt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state relative-caret-position="209">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -303,12 +305,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ALG/loaddata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        <state relative-caret-position="351">
+          <caret line="118" column="19" lean-forward="true" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
           <folding>
-            <element signature="e#0#85#0" expanded="true" />
-            <element signature="e#459#1095#0" />
-            <element signature="e#1125#1226#0" />
+            <element signature="e#0#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
